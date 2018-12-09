@@ -90,6 +90,7 @@ function twentyfifteen_header_style() {
 		// Short header for when there is no Custom Header and Header Text is hidden.
 		if ( empty( $header_image ) && ! display_header_text() ) :
 	?>
+		#custom-navbar p {position: absolute; margin: 0;}
 		.site-header {
 			padding-top: 14px;
 			padding-bottom: 14px;
@@ -106,6 +107,7 @@ function twentyfifteen_header_style() {
 			}
 			.site-branding {
 				min-height: 56px;
+				top: 2.5em;
 			}
 		}
 		@media screen and (min-width: 55em) {
@@ -132,21 +134,33 @@ function twentyfifteen_header_style() {
 		// Has a Custom Header been added?
 		if ( ! empty( $header_image ) ) :
 	?>
+		#custom-navbar p {position: absolute; margin: 0;}
+		#custom-navbar {
+			z-index: 100;
+			top: 100px;
+			width: 100%;
+			height: 30px;
+			position: relative:
+		}
 		.site-header {
-			background: url(<?php header_image(); ?>) no-repeat 50% 50%;
-			-webkit-background-size: cover;
-			-moz-background-size:    cover;
-			-o-background-size:      cover;
-			background-size:         cover;
+			/*background: url(<?php header_image(); ?>) no-repeat 50% 50%;*/
+			background: url(http://54.165.154.66:8080/wp-content/uploads/2018/12/header.png) no-repeat 50% 50%;
+			-webkit-background-size: contain;
+			-moz-background-size:    contain;
+			-o-background-size:      contain;
+			background-size:         contain;
 		}
 
 		@media screen and (min-width: 59.6875em) {
 			body:before {
-				background: url(<?php header_image(); ?>) no-repeat 100% 50%;
-				-webkit-background-size: cover;
-				-moz-background-size:    cover;
-				-o-background-size:      cover;
-				background-size:         cover;
+				/* background: url(<?php header_image(); ?>) no-repeat 100% 50%; */
+				background: url(http://54.165.154.66:8080/wp-content/uploads/2018/12/header.png) no-repeat 100% 50%;
+				-webkit-background-size: contain;
+				-moz-background-size:    contain;
+				-o-background-size:      contain;
+				background-size:         contain;
+				background-position: center;
+				background-color: white;
 				border-right: 0;
 			}
 
@@ -167,6 +181,9 @@ function twentyfifteen_header_style() {
 		}
 	<?php endif; ?>
 	</style>
+	<script>
+		$(document).ready(function(){console.log('loaded')});
+	</script>
 	<?php
 }
 endif; // twentyfifteen_header_style

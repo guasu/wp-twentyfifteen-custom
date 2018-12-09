@@ -3095,6 +3095,7 @@ p > video {
 	.site-branding {
 		min-height: 3.7059em;
 		padding-right: 66px;
+		top: 2.7em;
 	}
 
 	.site-title {
@@ -3106,7 +3107,7 @@ p > video {
 	.site-description {
 		font-size: 14px;
 		font-size: 1.4rem;
-		top: 50px;
+		top: 45px;
 	}
 
 	.widget {
@@ -3718,7 +3719,7 @@ p > video {
 	.site-branding {
 		min-height: 3.7895em;
 		padding-right: 74px;
-		top: 40px;
+		top: 48px;
 	}
 
 	.site-title {
@@ -3730,7 +3731,7 @@ p > video {
 	.site-description {
 		font-size: 16px;
 		font-size: 1.6rem;
-		top: 55px;
+		top: 50px;
 	}
 
 	.widget {
@@ -6027,4 +6028,5 @@ p > video {
 		padding: 0;
 	}
 }
+
 
