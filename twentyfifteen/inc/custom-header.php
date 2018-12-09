@@ -134,13 +134,8 @@ function twentyfifteen_header_style() {
 		// Has a Custom Header been added?
 		if ( ! empty( $header_image ) ) :
 	?>
-		#custom-navbar p {position: absolute; margin: 0;}
 		#custom-navbar {
-			z-index: 100;
-			top: 100px;
-			width: 100%;
-			height: 30px;
-			position: relative:
+			display: none;
 		}
 		.site-header {
 			/*background: url(<?php header_image(); ?>) no-repeat 50% 50%;*/
@@ -167,6 +162,24 @@ function twentyfifteen_header_style() {
 			.site-header {
 				background: transparent;
 			}
+	                #custom-navbar p {
+        	                position: relative;
+               	        	margin: 0;
+	                        float: right;
+      		                padding-left: 20px;
+	                }
+	                #custom-navbar {
+	                        z-index: 100;
+	                        top: 100px;
+	                        width: 70.5882%;
+	                        height: 30px;
+	                        position: fixed;
+	                        margin-left: 29.4118%;
+				display: block;
+	                }
+	                #custom-navbar-block{
+	                        margin: 0 8.3333%;
+	                }
 		}
 	<?php
 		endif;
@@ -182,7 +195,8 @@ function twentyfifteen_header_style() {
 	<?php endif; ?>
 	</style>
 	<script>
-		$(document).ready(function(){console.log('loaded')});
+		var customNav = "<div id='custom-navbar'><div id='custom-navbar-block'><p><a href='#'>Red Hidrografica</a></p><p><a href='#'>Parte Diario</a></p></div></div>";
+		jQuery(document).ready(function(){jQuery('body').prepend(customNav)});
 	</script>
 	<?php
 }
