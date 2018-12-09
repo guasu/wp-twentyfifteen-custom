@@ -139,7 +139,7 @@ function twentyfifteen_header_style() {
 		}
 		.site-header {
 			/*background: url(<?php header_image(); ?>) no-repeat 50% 50%;*/
-			background: url(wp-content/uploads/2018/12/header.png) no-repeat 50% 50%;
+			background: url(http://54.165.154.66:8080/wp-content/uploads/2018/12/header.png) no-repeat 50% 50%;
 			-webkit-background-size: contain;
 			-moz-background-size:    contain;
 			-o-background-size:      contain;
@@ -149,7 +149,7 @@ function twentyfifteen_header_style() {
 		@media screen and (min-width: 59.6875em) {
 			body:before {
 				/* background: url(<?php header_image(); ?>) no-repeat 100% 50%; */
-				background: url(wp-content/uploads/2018/12/header.png) no-repeat 100% 50%;
+				background: url(http://54.165.154.66:8080/wp-content/uploads/2018/12/header.png) no-repeat 100% 50%;
 				-webkit-background-size: contain;
 				-moz-background-size:    contain;
 				-o-background-size:      contain;
