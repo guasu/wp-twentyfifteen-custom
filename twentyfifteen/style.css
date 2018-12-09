@@ -4369,6 +4369,7 @@ p > video {
 	.site-description {
 		font-size: 12px;
 		font-size: 1.2rem;
+		top: 30px;
 	}
 
 	.widget {
@@ -4988,6 +4989,7 @@ p > video {
 	.site-description {
 		font-size: 14px;
 		font-size: 1.4rem;
+		top: 37px;
 	}
 
 	.widget {
