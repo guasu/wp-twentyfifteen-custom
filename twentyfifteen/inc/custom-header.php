@@ -195,7 +195,7 @@ function twentyfifteen_header_style() {
 	<?php endif; ?>
 	</style>
 	<script>
-		var customNav = "<div id='custom-navbar'><div id='custom-navbar-block'><p><a href='#'>Red Hidrografica</a></p><p><a href='#'>Parte Diario</a></p></div></div>";
+		var customNav = "<div id='custom-navbar'><div id='custom-navbar-block'><p><a href='http://54.165.154.66:8080/red-hidrografica/'>Red Hidrografica</a></p><p><a href='http://54.165.154.66:8080/parte-diario'>Parte Diario</a></p></div></div>";
 		jQuery(document).ready(function(){jQuery('body').prepend(customNav)});
 	</script>
 	<?php
