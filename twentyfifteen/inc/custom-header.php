@@ -137,6 +137,15 @@ function twentyfifteen_header_style() {
 		#custom-navbar {
 			display: none;
 		}
+		.site-info {
+			display: none;
+		}
+		.site-footer{
+			background: url(http://54.165.154.66:8080/wp-content/uploads/2018/12/footer.png) no-repeat;
+			background-position: center;
+			background-color: white;
+			height: 100px;
+		}
 		.site-header {
 			/*background: url(<?php header_image(); ?>) no-repeat 50% 50%;*/
 			background: url(http://54.165.154.66:8080/wp-content/uploads/2018/12/header.png) no-repeat 50% 50%;
